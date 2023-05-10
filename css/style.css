@@ -238,14 +238,14 @@ a:visited {
   right: 0%;
   animation-name: swimmer-from-right;
 }
-
+/* 
 .swimmer-3 {
   background-image: url("../assets/danghosts/Danghost_Jaune.png");
   top: 50%;
   rotate: -90%;
   left: 0%;
   animation-name: swimmer-from-left;
-}
+} */
 
 .swimmer-4 {
   background-image: url("../assets/danghosts/Danghost_Turquoise.png");
@@ -292,4 +292,29 @@ a:visited {
   55% {
     transform: translate(-500%, 0%);
   }
+}
+
+@keyframes swimmer-circle {
+  0% {
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+  100% {
+    top: 50%;
+    left: 100%;
+    transform: translate(0, -50%);
+  }
+}
+
+.swimmer-3 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-image: url("../assets/danghosts/Danghost_Jaune.png");
+  animation-name: swimmer-circle;
+  animation-duration: 30s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
