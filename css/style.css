@@ -289,18 +289,18 @@ a:visited {
 }
 @keyframes swimmer-from-right {
   0% {
-    transform: translateX(100vw) rotate(-90deg);
+    transform: translateX(0vw) rotate(-90deg);
   }
   45% {
-    transform: translateX(50vw) rotate(-90deg);
+    transform: translateX(-50vw) rotate(-90deg);
   }
   55% {
-    transform: translateX(50vw) rotate(90deg);
+    transform: translateX(-50vw) rotate(90deg);
   }
   95% {
-    transform: translateX(100vw) rotate(90deg);
+    transform: translateX(0vw) rotate(90deg);
   }
   100% {
-    transform: translateX(100vw) rotate(-90deg);
+    transform: translateX(0vw) rotate(-90deg);
   }
 }
