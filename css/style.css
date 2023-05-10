@@ -55,6 +55,7 @@ body {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
+  z-index: -1;
   background: url("../assets/DanghostBackgroundTitle.jpg") no-repeat center;
   background-size: cover;
 }
@@ -217,174 +218,72 @@ a:visited {
   height: 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  animation-duration: 30s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
 .swimmer-1 {
   background-image: url("../assets/danghosts/Danghost_Bleu.png");
-  top: 0;
-  left: 50%;
-  animation-name: swimmer-1;
-}
-
-@keyframes swimmer-1 {
-  0% {
-    transform: translate(-100%, -100%);
-  }
-  40% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  60% {
-    transform: rotate(360deg);
-  }
-  70% {
-    transform: translate(-100%, 0);
-  }
-  100% {
-    transform: translate(-100%, -100%);
-  }
+  top: 30%;
+  left: 0%;
+  animation-name: swimmer-from-left;
 }
 
 .swimmer-2 {
   background-image: url("../assets/danghosts/Danghost_Rouge.png");
-  top: 25%;
-  left: 75%;
-  animation-name: swimmer-2;
+  top: 40%;
+  right: 0%;
+  animation-name: swimmer-from-right;
 }
 
-@keyframes swimmer-2 {
-  0% {
-    transform: translate(100%, -100%);
-  }
-  40% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  60% {
-    transform: rotate(360deg);
-  }
-  70% {
-    transform: translate(0, -100%);
-  }
-  100% {
-    transform: translate(100%, -100%);
-  }
-}
 .swimmer-3 {
   background-image: url("../assets/danghosts/Danghost_Jaune.png");
   top: 50%;
-  left: 100%;
-  animation-name: swimmer-3;
-}
-
-@keyframes swimmer-3 {
-  0% {
-    transform: translate(100%, -100%);
-  }
-  40% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  60% {
-    transform: rotate(360deg);
-  }
-  70% {
-    transform: translate(0, -100%);
-  }
-  100% {
-    transform: translate(100%, -100%);
-  }
+  left: 0%;
+  animation-name: sswimmer-from-left;
 }
 
 .swimmer-4 {
   background-image: url("../assets/danghosts/Danghost_Turquoise.png");
-  top: 75%;
-  left: 75%;
-  animation-name: swimmer-4;
-}
-
-@keyframes swimmer-4 {
-  0% {
-    transform: translate(100%, 100%);
-  }
-  40% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  60% {
-    transform: rotate(360deg);
-  }
-  70% {
-    transform: translate(0, 100%);
-  }
-  100% {
-    transform: translate(100%, 100%);
-  }
+  top: 60%;
+  right: 0%;
+  animation-name: swimmer-from-right;
 }
 
 .swimmer-5 {
   background-image: url("../assets/danghosts/Danghost_Vert.png");
-  top: 75%;
-  left: 25%;
-  animation-name: swimmer-5;
-}
-
-@keyframes swimmer-5 {
-  0% {
-    transform: translate(-100%, 100%);
-  }
-  40% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  60% {
-    transform: rotate(360deg);
-  }
-  70% {
-    transform: translate(0, 100%);
-  }
-  100% {
-    transform: translate(-100%, 100%);
-  }
+  top: 70%;
+  left: 0%;
+  animation-name: swimmer-from-left;
 }
 
 .swimmer-6 {
   background-image: url("../assets/danghosts/Danghost_Violet.png");
-  top: 50%;
+  top: 80%;
   left: 0;
-  animation-name: swimmer-6;
+  animation-name: swimmer-from-right;
 }
 
-@keyframes swimmer-6 {
+@keyframes swimmer-from-left {
   0% {
-    transform: translate(-100%, -100%);
+    transform: translate(-100%, 0%);
   }
-  40% {
-    transform: translate(0, 0);
-  }
-  50% {
+  45% {
     transform: rotate(180deg);
   }
-  60% {
-    transform: rotate(360deg);
+  55% {
+    transform: translate(100%, 0%);
   }
-  70% {
-    transform: translate(0, -100%);
+}
+@keyframes swimmer-from-right {
+  0% {
+    transform: translate(100%, 0%);
   }
-  100% {
-    transform: translate(-100%, -100%);
+  45% {
+    transform: rotate(180deg);
+  }
+  55% {
+    transform: translate(-100%, 0%);
   }
 }
