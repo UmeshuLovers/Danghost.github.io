@@ -274,23 +274,27 @@ a:visited {
 
 @keyframes swimmer-from-left {
   0% {
-    transform: translate(-700%, 0%, 2rem);
   }
   45% {
-    transform: rotate(180deg);
+    transform: translate(-700%, 0%);
   }
   55% {
-    transform: translate(700%, 0%, -2rem);
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: translate(700%, 0%);
   }
 }
 @keyframes swimmer-from-right {
   0% {
-    transform: translate(700%, 0%);
   }
   45% {
-    transform: rotate(180deg);
+    transform: translate(700%, 0%);
   }
   55% {
+    transform: rotate(180deg);
+  }
+  100% {
     transform: translate(-700%, 0%);
   }
 }
