@@ -211,3 +211,180 @@ a:visited {
   color: #c9bf87;
   text-decoration: underline;
 }
+.swimmer {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.swimmer-1 {
+  background-image: url("../assets/danghosts/Danghost_Bleu.png");
+  top: 0;
+  left: 50%;
+  animation-name: swimmer-1;
+}
+
+@keyframes swimmer-1 {
+  0% {
+    transform: translate(-100%, -100%);
+  }
+  40% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(360deg);
+  }
+  70% {
+    transform: translate(-100%, 0);
+  }
+  100% {
+    transform: translate(-100%, -100%);
+  }
+}
+
+.swimmer-2 {
+  background-image: url("../assets/danghosts/Danghost_Rouge.png");
+  top: 25%;
+  left: 75%;
+  animation-name: swimmer-2;
+}
+
+@keyframes swimmer-2 {
+  0% {
+    transform: translate(100%, -100%);
+  }
+  40% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(360deg);
+  }
+  70% {
+    transform: translate(0, -100%);
+  }
+  100% {
+    transform: translate(100%, -100%);
+  }
+}
+.swimmer-3 {
+  background-image: url("../assets/danghosts/Danghost_Jaune.png");
+  top: 50%;
+  left: 100%;
+  animation-name: swimmer-3;
+}
+
+@keyframes swimmer-3 {
+  0% {
+    transform: translate(100%, -100%);
+  }
+  40% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(360deg);
+  }
+  70% {
+    transform: translate(0, -100%);
+  }
+  100% {
+    transform: translate(100%, -100%);
+  }
+}
+
+.swimmer-4 {
+  background-image: url("../assets/danghosts/Danghost_Turquoise.png");
+  top: 75%;
+  left: 75%;
+  animation-name: swimmer-4;
+}
+
+@keyframes swimmer-4 {
+  0% {
+    transform: translate(100%, 100%);
+  }
+  40% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(360deg);
+  }
+  70% {
+    transform: translate(0, 100%);
+  }
+  100% {
+    transform: translate(100%, 100%);
+  }
+}
+
+.swimmer-5 {
+  background-image: url("../assets/danghosts/Danghost_Vert.png");
+  top: 75%;
+  left: 25%;
+  animation-name: swimmer-5;
+}
+
+@keyframes swimmer-5 {
+  0% {
+    transform: translate(-100%, 100%);
+  }
+  40% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(360deg);
+  }
+  70% {
+    transform: translate(0, 100%);
+  }
+  100% {
+    transform: translate(-100%, 100%);
+  }
+}
+
+.swimmer-6 {
+  background-image: url("../assets/danghosts/Danghost_Violet.png");
+  top: 50%;
+  left: 0;
+  animation-name: swimmer-6;
+}
+
+@keyframes swimmer-6 {
+  0% {
+    transform: translate(-100%, -100%);
+  }
+  40% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(360deg);
+  }
+  70% {
+    transform: translate(0, -100%);
+  }
+  100% {
+    transform: translate(-100%, -100%);
+  }
+}
