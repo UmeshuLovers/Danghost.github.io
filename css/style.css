@@ -1,228 +1,213 @@
-
 /* select all <div> node */
 /* test */
 
-@font-face 
-{
-	font-family: 'typo';
-	src: url('../assets/fonts/infini-romain.eot');
-	src: local('☺'), url('../assets/fonts/infini-romain.woff') format('woff'), url('../assets/fonts/infini-romain.ttf') format('truetype'), url('../assets/fonts/infini-romain.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+@font-face {
+  font-family: "typo";
+  src: url("../assets/fonts/infini-romain.eot");
+  src: local("☺"), url("../assets/fonts/infini-romain.woff") format("woff"),
+    url("../assets/fonts/infini-romain.ttf") format("truetype"),
+    url("../assets/fonts/infini-romain.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .intrinsic-container {
-    position: relative;
-    height: 0;
-    overflow: hidden;
-    
+  position: relative;
+  height: 0;
+  overflow: hidden;
 }
 
-#kickstarter{
-        text-align: center;
-
+#demo {
+  position: relative;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
 }
 
-#demo{
-    position: relative;
-    font-size: 1.8em;
-    font-weight: bold;
-    text-align: center;
-
-}
- 
 /* 16x9 Aspect Ratio */
 .intrinsic-container-16x9 {
-    padding-bottom: 46.25%;
+  padding-bottom: 46.25%;
 }
- 
+
 /* 4x3 Aspect Ratio */
 .intrinsic-container-4x3 {
-    padding-bottom: 65%;
-}
- 
-.intrinsic-container iframe {
-    position: absolute;
-    top:0;
-    left: 50%;
-    width: 82%;
-    height: 99.75%;
-    transform: translateX(-50%) translateY(0);
+  padding-bottom: 65%;
 }
 
+.intrinsic-container iframe {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 82%;
+  height: 99.75%;
+  transform: translateX(-50%) translateY(0);
+}
 
 body {
-    margin : 0;
-    padding: 0;
-    
-    background-color: #1d1e19;
-    text-align: center;
+  margin: 0;
+  padding: 0;
+
+  background-color: #4a625b;
+  text-align: center;
 }
 
-.top{
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    background: url("../assets/ForestofLiarsBackgroundTitle.jpg") no-repeat center;
-    background-size: cover;
+.top {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  background: url("../assets/DanghostBackgroundTitle.jpg") no-repeat center;
+  background-size: cover;
 }
 
-
-.facebook{
-    position: absolute;
-    top: 82%;
-    left: 53%;
-    width: 45px;
-    height: 45px;
-    transform: translateX(-50%) translateY(-50%);
+.facebook {
+  position: absolute;
+  top: 82%;
+  left: 53%;
+  width: 45px;
+  height: 45px;
+  transform: translateX(-50%) translateY(-50%);
 }
 
-.twitter{
-    position: absolute;
-    top: 82%;
-    left: 47%;
-    width: 45px;
-    height: 45px;
-    transform: translateX(-50%) translateY(-50%);
+.twitter {
+  position: absolute;
+  top: 82%;
+  left: 47%;
+  width: 45px;
+  height: 45px;
+  transform: translateX(-50%) translateY(-50%);
 }
 
+.container {
+  font-family: sans-serif;
 
-.container{
-    font-family:sans-serif;
-    
-    display: inline-block;
-    width:100%;
-    max-width: 75%;
-    line-height:2em;
-    
-    color: #c9bf87;
-    text-align: justify;
-    
+  display: inline-block;
+  width: 100%;
+  max-width: 75%;
+  line-height: 2em;
+
+  color: #c9bf87;
+  text-align: justify;
 }
 
+#mc_embed_signup {
+  background-color: rgba(0, 0, 0, 0);
 
-#mc_embed_signup{
-    
-    background-color: rgba(0, 0, 0, 0);
+  font: 1em Helvetica, Arial, sans-serif;
+  color: #c9bf87;
+  border-radius: 10px;
 
-    font: 1em Helvetica,Arial,sans-serif;
-    color: #c9bf87;
-    border-radius: 10px;
+  width: 500px;
 
-    width: 500px;
-
-    margin: auto;
-    text-align: center;
-    line-height: .8em;
+  margin: auto;
+  text-align: center;
+  line-height: 0.8em;
 }
 
-#mc_embed_signup form{
-    text-align: center !important;
+#mc_embed_signup form {
+  text-align: center !important;
 }
 
 #mc_embed_signup input.email,
-#mc_embed_signup input.button{
-    display: inline-block !important;
-    margin: auto !important;
+#mc_embed_signup input.button {
+  display: inline-block !important;
+  margin: auto !important;
 }
 
-#mc_embed_signup input.email{
-    font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
-    font-size: 1em;
-    display: block;
-    padding: 0 0.4em;
-    margin: 0 4% 10px 0;
-    min-height: 32px;
-    width: 58%;
-    min-width: 130px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+#mc_embed_signup input.email {
+  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, Verdana,
+    sans-serif;
+  font-size: 1em;
+  display: block;
+  padding: 0 0.4em;
+  margin: 0 4% 10px 0;
+  min-height: 32px;
+  width: 58%;
+  min-width: 130px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 
-#mc_embed_signup input.button{
-    clear: both;
-    background-color: #aaa;
-    border: 0 none;
-    border-radius: 4px;
-    letter-spacing: .03em;
-    color: #FFFFFF;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 1em;
-    height: 32px;
-    line-height: 32px;
-    margin: 0 5px 10px 0;
-    padding: 0 16px;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: top;
-    white-space: nowrap;
-    width: auto;
-    transition: all 0.23s ease-in-out 0s;
+#mc_embed_signup input.button {
+  clear: both;
+  background-color: #aaa;
+  border: 0 none;
+  border-radius: 4px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 5px 10px 0;
+  padding: 0 16px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: auto;
+  transition: all 0.23s ease-in-out 0s;
 }
-
-
 
 [data-brackets-id="129"],
-[data-brackets-id="131"]
-{
-    display: none;
-    visibility: hidden;
+[data-brackets-id="131"] {
+  display: none;
+  visibility: hidden;
 }
 
-.center{
-    margin-top: 16px;
+.center {
+  margin-top: 16px;
 }
 
-label{
-    text-align: center;
+label {
+  text-align: center;
 }
 
 input {
-    
-    text-align: center;
+  text-align: center;
 }
 
-
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-p{
-    color:#c9bf87;
+p {
+  color: #c9bf87;
 }
 
-.txt-1{
-    font-size: 1.2em;
-    font-weight: bold;
+.txt-1 {
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
-.text-2{
-    
+.text-2 {
 }
 
-.tr{
-    font-size: 1.2em;
-    font-weight: bold;
-    text-align: center;
+.tr {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
 }
 
 .footer {
-    width: 500px;
-    padding-bottom: 4em;
-    margin: auto;
-    text-align: center;
-    
+  width: 500px;
+  padding-bottom: 4em;
+  margin: auto;
+  text-align: center;
 }
 
-.pos img{
-    width:49%;
-    display: inline;
+.pos img {
+  width: 49%;
+  display: inline;
 }
 
-a:hover, a:focus, a:active, a, a:visited {
-    /* Les liens au survol, au focus, et actifs : on leur donne la couleur rouge pour l'exemple */
-    color: #c9bf87;
-    text-decoration:underline;
+a:hover,
+a:focus,
+a:active,
+a,
+a:visited {
+  /* Les liens au survol, au focus, et actifs : on leur donne la couleur rouge pour l'exemple */
+  color: #c9bf87;
+  text-decoration: underline;
 }
