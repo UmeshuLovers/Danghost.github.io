@@ -221,6 +221,7 @@ a:visited {
   animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  animation-timing-function: ease-in-out;
 }
 
 .swimmer-1 {
@@ -274,27 +275,23 @@ a:visited {
 
 @keyframes swimmer-from-left {
   0% {
+    transform: translateX(0);
   }
-  45% {
-    transform: translate(-700%, 0%);
-  }
-  55% {
-    transform: rotate(180deg);
+  50% {
+    transform: translateX(50vw) rotateY(180deg);
   }
   100% {
-    transform: translate(700%, 0%);
+    transform: translateX(0);
   }
 }
 @keyframes swimmer-from-right {
   0% {
+    transform: translateX(100vw);
   }
-  45% {
-    transform: translate(700%, 0%);
-  }
-  55% {
-    transform: rotate(180deg);
+  50% {
+    transform: translateX(-50vw) rotateY(-180deg);
   }
   100% {
-    transform: translate(-700%, 0%);
+    transform: translateX(100vw);
   }
 }
