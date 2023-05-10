@@ -272,37 +272,35 @@ a:visited {
 
 @keyframes swimmer-from-left {
   0% {
-    transform: translateX(0);
-    transform: rotate(90deg);
+    transform: translateX(0) rotate(90deg);
   }
-  50% {
+  45% {
     transform: translateX(50vw) rotate(90deg);
   }
-  51% {
-    transform: rotate(-90deg);
+  55% {
+    transform: translateX(50vw) rotate(-90deg);
   }
-  99% {
-    transform: translateX(0);
+  95% {
+    transform: translateX(0) rotate(-90deg);
   }
   100% {
-    transform: rotate(90deg);
+    transform: translateX(0) rotate(90deg);
   }
 }
 @keyframes swimmer-from-right {
   0% {
-    transform: translateX(100vw);
-    transform: rotate(-90deg);
+    transform: translateX(100vw) rotate(-90deg);
   }
-  50% {
+  45% {
     transform: translateX(50vw) rotate(-90deg);
   }
-  51% {
-    transform: rotate(90deg);
+  55% {
+    transform: translateX(50vw) rotate(90deg);
   }
-  99% {
-    transform: translateX(100vw);
+  95% {
+    transform: translateX(100vw) rotate(90deg);
   }
   100% {
-    transform: rotate(-90deg);
+    transform: translateX(100vw) rotate(-90deg);
   }
 }
