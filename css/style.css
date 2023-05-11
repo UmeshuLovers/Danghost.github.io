@@ -346,8 +346,17 @@ iframe {
   margin: auto;
   margin-top: 0rem;
   margin-right: 23rem;
+  width: 100%;
 }
-
+.newsSubButton {
+  margin: auto;
+  margin-right: 1rem;
+  font-size: large;
+  font-weight: bold;
+}
+.newsCheckboxDesc {
+  margin-left: 0;
+}
 /* FooterSection */
 #footerSection {
   margin-top: 2rem;
@@ -357,11 +366,13 @@ iframe {
 }
 .footer {
   flex-direction: row;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .footerStudio {
   flex-direction: column;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
 .footerStudioTitle {
   font-size: large;
@@ -376,4 +387,28 @@ iframe {
 .footerStudioEmail {
   margin-left: 0.5rem;
   text-decoration: none;
+}
+
+.footerLogo {
+  margin-left: 1rem;
+  margin-right: 10rem;
+  width: 20rem;
+}
+.footerSocials {
+  margin-left: 10rem;
+  margin-right: 1rem;
+  flex-direction: column;
+}
+.footerSocialTitle {
+  font-size: large;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.footerSocialIcons {
+  flex-direction: row;
+}
+.footerSocial {
+  margin-left: 1rem;
+  width: 2rem;
+  width: 2rem;
 }
