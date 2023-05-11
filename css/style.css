@@ -81,6 +81,12 @@ iframe {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.carouselItems {
+  overflow: scroll;
+  scroll-snap-type: both mandatory;
+  scroll-padding: 1rem;
+}
+
 .carouselItem {
   max-width: 20rem;
   max-height: 20rem;
@@ -419,4 +425,118 @@ iframe {
   margin-left: 1rem;
   width: 2rem;
   width: 2rem;
+}
+
+/* CAROUSEL TEST */
+
+#container {
+  height: 20rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#galleryContainer {
+  height: 25rem;
+  width: 80rem;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#galleryView {
+  height: 20rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainView {
+  height: 30rem;
+  width: 30rem;
+  border-radius: 5px;
+  background-color: #eb9100;
+  margin-left: 10px;
+  margin-right: 10px;
+  z-index: 1;
+  transition: all 1s;
+}
+
+#mainView:hover {
+  transform: scale(1.2);
+  transition: all 1s;
+}
+
+#leftView {
+  height: 400px;
+  width: 150px;
+  opacity: 0.5;
+  border-radius: 5px;
+  transform: skewy(5deg);
+  transform-origin: top right;
+  background-color: #eb9100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+
+#leftView:hover {
+  opacity: 1;
+  transition: all 1s;
+}
+
+#rightView {
+  height: 400px;
+  width: 150px;
+  opacity: 0.5;
+  border-radius: 5px;
+  transform: skewy(-5deg);
+  transform-origin: top left;
+  background-color: #eb9100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+
+#rightView:hover {
+  opacity: 1;
+  transition: all 1s;
+}
+
+.navBtns {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  opacity: 0.8;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+}
+
+.navBtns:hover {
+  opacity: 1;
+  transition: all 1s;
+  background-color: #eb9100;
+}
+
+#navLeft {
+  left: 50px;
+}
+
+#navRight {
+  right: 50px;
+}
+
+#linkTag {
+  cursor: pointer;
+  z-index: 1;
+  box-sizing: border-box;
 }

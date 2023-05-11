@@ -51,15 +51,23 @@
     <div id="carouselSection" class="section">
       <div class="carousel">
         <div class="carouselTitle">Want to see more ?</div>
-        <div class="carouselItems">
-          <img src="./assets/DanghostDesktopA.png" class="carouselItem" />
-          <img src="./assets/DanghostDesktopB.png" class="carouselItem" />
-          <img src="./assets/DanghostDesktopC.png" class="carouselItem" />
-          <img src="./assets/DanghostDesktopD.png" class="carouselItem" />
+        <div id="container">
+          <div id="galleryView">
+            <div id="galleryContainer">
+              <div id="leftView"></div>
+              <button id="navLeft" class="navBtns">
+                <i class="fas fa-arrow-left fa-3x"></i>
+              </button>
+              <a id="linkTag">
+                <div id="mainView"></div>
+              </a>
+              <div id="rightView"></div>
+              <button id="navRight" class="navBtns">
+                <i class="fas fa-arrow-right fa-3x"></i>
+              </button>
+            </div>
+          </div>
         </div>
-        <img src="./assets/Arrow.png" class="arrow carouselLeftArrow" />
-        <img src="./assets/Arrow.png" class="arrow carouselRightArrow" />
-        <div class="carouselPosition">CarouPos</div>
       </div>
     </div>
     <!-- About section -->
@@ -183,4 +191,76 @@
       </div>
     </div>
   </body>
+
+  <!-- Image Carousel script -->
+  <script>
+    let imgObject = [
+      "./assets/DanghostDesktopA.png",
+      "./assets/DanghostDesktopB.png",
+      "./assets/DanghostDesktopC.png",
+      "./assets/DanghostDesktopD.png",
+      "./assets/DanghostDesktopE.png",
+    ];
+
+    let mainImg = 0;
+    let prevImg = imgObject.length - 1;
+    let nextImg = 1;
+
+    function loadGallery() {
+      let mainView = document.getElementById("mainView");
+      mainView.style.background = "url(" + imgObject[mainImg] + ")";
+      mainView.style.backgroundRepeat = "no-repeat";
+      mainView.style.backgroundSize = "30rem";
+
+      let leftView = document.getElementById("leftView");
+      leftView.style.background = "url(" + imgObject[prevImg] + ")";
+      leftView.style.backgroundRepeat = "no-repeat";
+      leftView.style.backgroundSize = "30rem";
+
+      let rightView = document.getElementById("rightView");
+      rightView.style.background = "url(" + imgObject[nextImg] + ")";
+      rightView.style.backgroundRepeat = "no-repeat";
+      rightView.style.backgroundSize = "30rem";
+
+      let linkTag = document.getElementById("linkTag");
+      linkTag.href = imgObject[mainImg];
+    }
+
+    function scrollRight() {
+      prevImg = mainImg;
+      mainImg = nextImg;
+      if (nextImg >= imgObject.length - 1) {
+        nextImg = 0;
+      } else {
+        nextImg++;
+      }
+      loadGallery();
+    }
+
+    function scrollLeft() {
+      nextImg = mainImg;
+      mainImg = prevImg;
+
+      if (prevImg === 0) {
+        prevImg = imgObject.length - 1;
+      } else {
+        prevImg--;
+      }
+      loadGallery();
+    }
+
+    document.getElementById("navRight").addEventListener("click", scrollRight);
+    document.getElementById("navLeft").addEventListener("click", scrollLeft);
+    document.getElementById("rightView").addEventListener("click", scrollRight);
+    document.getElementById("leftView").addEventListener("click", scrollLeft);
+    document.addEventListener("keyup", function (e) {
+      if (e.keyCode === 37) {
+        scrollLeft();
+      } else if (e.keyCode === 39) {
+        scrollRight();
+      }
+    });
+
+    loadGallery();
+  </script>
 </html>
