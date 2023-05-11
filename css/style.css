@@ -63,8 +63,8 @@ iframe {
   z-index: -1;
 }
 .logoImg {
-  width: 88rem;
-  height: 34rem;
+  width: 80vw;
+  height: 30vw;
   margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
@@ -384,8 +384,8 @@ iframe {
 }
 .footerStudio {
   flex-direction: column;
-  margin-left: 10rem;
-  margin-right: 10rem;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 .footerStudioTitle {
   font-size: large;
@@ -407,10 +407,10 @@ iframe {
 .footerLogo {
   margin-left: 1rem;
   margin-right: 10rem;
-  width: 20rem;
+  width: 15rem;
 }
 .footerSocials {
-  margin-left: 10rem;
+  margin-left: 8rem;
   margin-right: 1rem;
   flex-direction: column;
 }
