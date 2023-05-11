@@ -149,7 +149,7 @@ iframe {
   margin-right: 10rem;
   margin-bottom: 1rem;
 }
-.releaseDatemar {
+.releaseDateButton {
   background-color: #49498a; /* Green */
   border: none;
   color: white;
@@ -165,8 +165,9 @@ iframe {
   width: 50%;
   margin-left: 10rem;
   margin-right: auto;
+  cursor: pointer;
 }
-.releaseDatemar:hover {
+.releaseDateButton:hover {
   background-color: #37376a; /* Green */
 }
 
@@ -328,6 +329,10 @@ iframe {
   border: none;
   color: white;
   width: 20rem;
+  cursor: pointer;
+}
+.newsInput:focus {
+  outline: none;
 }
 .newsSubmar {
   margin: 1rem;
@@ -338,6 +343,7 @@ iframe {
   margin-right: 10rem;
   margin-bottom: 0rem;
   width: 20rem;
+  cursor: pointer;
 }
 .newsSubArea:hover {
   background-color: #20203f;
@@ -382,11 +388,13 @@ iframe {
 .footerStudioWebsite {
   margin-left: 0.5rem;
   text-decoration: none;
+  color: black;
 }
 
 .footerStudioEmail {
   margin-left: 0.5rem;
   text-decoration: none;
+  color: black;
 }
 
 .footerLogo {
