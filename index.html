@@ -1,73 +1,182 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114071409-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-114071409-1');
-        </script>
-
-        <meta charset="utf-8">
-        <title>Danghost</title>
-        
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="icon" href="favicon.ico" />
-
-    </head>
-    
-    <body>
-        <div class="top">
-            <div class="twitter"><a href="https://twitter.com/UmeshuLovers" target="_blank"><img src="assets/twitter.png" width=100%/></a></div>
-            <div class="facebook"><a href="https://www.facebook.com/Umeshulovers/" target="_blank"><img src="assets/facebook.png" width=100%/></a></div>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-114071409-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-114071409-1");
+    </script>
+    <meta charset="utf-8" />
+    <title>Danghost</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <!-- Top section -->
+    <div class="section">
+      <div class="topLogo"><img class="logoImg" src="./assets/Logo.png" /></div>
+    </div>
+    <!-- Menu & trailer section -->
+    <div class="section">
+      <div class="topMenu">
+        <a href="#aboutSection" class="menuItem">About</a>
+        <a href="#charasSection" class="menuItem">Charas</a>
+        <a href="#newsSection" class="menuItem">News</a>
+        <a href="#footerSection" class="menuItem">Contact</a>
+        <a
+          href="https://store.steampowered.com/app/1812170/Danghost"
+          class="menuItem"
+          >Steam</a
+        >
+      </div>
+      <div class="trailer">
+        <iframe
+          src="https://www.youtube.com/embed/_VonpkEWBlg"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <!-- Carousel section -->
+    <div id="carouselSection" class="section">
+      <div class="carousel">
+        <div class="carouselTitle">Want to see more ?</div>
+        <div class="carouselItems">
+          <img src="./assets/DanghostDesktopA.png" class="carouselItem" />
+          <img src="./assets/DanghostDesktopB.png" class="carouselItem" />
+          <img src="./assets/DanghostDesktopC.png" class="carouselItem" />
+          <img src="./assets/DanghostDesktopD.png" class="carouselItem" />
+        </div>
+        <img src="./assets/Arrow.png" class="arrow carouselLeftArrow" />
+        <img src="./assets/Arrow.png" class="arrow carouselRightArrow" />
+        <div class="carouselPosition">CarouPos</div>
+      </div>
+    </div>
+    <!-- About section -->
+    <div id="aboutSection" class="section">
+      <div class="about">
+        <div class="aboutColLeft">
+          <div class="aboutSectionName">About</div>
+          <div class="aboutTitle">Danghost is Amazing</div>
+          <div class="aboutText">
+            Danghost est un jeu puzzle-arcade inspiré des jeux de combats. Vous
+            incarnez un exorciste qui doit aspirer des danghosts. Vous
+            réaliserez un maximum de combos et utiliserez des sorts uniques pour
+            battre vos adversaires. Jouable en solo, c'est avec le mode multi
+            que le jeu révèlera tout son piquant !
+          </div>
+          <a
+            class="releaseDateButton"
+            href="https://store.steampowered.com/app/1812170/Danghost"
+          >
+            Release date due to September 2023
+          </a>
+        </div>
+        <div class="aboutColRight">
+          <img src="./assets/DanghostDesktopD.png" class="aboutPicture" />
+        </div>
+      </div>
+    </div>
+    <!-- Characters section -->
+    <div id="charasSection" class="section">
+      <div class="charaSectionTitle">12 uniques characters !</div>
+      <div class="characters">
+        <div class="characterBloc">
+          <div class="charaColLeft">
+            <img class="charaPicture" src="./assets/DanghostDesktopD.png" />
+          </div>
+          <div class="charaColRight">
+            <div class="characterName">Tatana</div>
+            <div class="characterPowerName">kendo</div>
+            <div class="characterDescription">
+              Tranche l'autel de tes adversaires pour les gêner, ou coupe la
+              colonne de danghosts qui te met en danger !
+            </div>
+            <div class="characterSkillsSectionTitle">Skills</div>
+            <div class="characterSkillsSection">
+              <div class="characterOffensivePowerSection">
+                <img
+                  src="./assets/DanghostDesktopD.png"
+                  class="characterPowerPicture"
+                />
+                <div class="characterPowerDescription">
+                  Tranche l'autel comme un fou
+                </div>
+              </div>
+              <div class="characterDefensivePowerSection">
+                <img
+                  src="./assets/DanghostDesktopD.png"
+                  class="characterPowerPicture"
+                />
+                <div class="characterPowerDescription">
+                  Coupe tes danghosts pour faire de la place
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="swimmer swimmer-1"></div>
-        <div class="swimmer swimmer-2"></div>
-        <div class="swimmer swimmer-3"></div>
-        <div class="swimmer swimmer-4"></div>
-        <div class="swimmer swimmer-5"></div>
-        <div class="swimmer swimmer-6"></div>
-        
-        <div class="container">
-            <div class="txt-1">
-                Danghost is an arcade puzzle game, inspired by fighting games, in which you play an exorcist who needs to hoover up small ghosts. 
-                Make combos, use unique spells and beat your opponents! 
-                Playable in single-player, it's with the local multiplayer mode that the game will reveal all its spice!
-            </div>
-            
-            <div class="intrinsic-container intrinsic-container-16x9">
-                <iframe src="https://www.youtube.com/embed/_VonpkEWBlg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-            <div class="txt-2">
-                With 12 character choices, each with special attacks, and the ability to play up to 4 players locally, make strategic chains and send lethal moves at your friends. 
-                Get the highest score and survive to win the game!
-            </div> 
-                <div class="pos">
-                    <a href="assets/DanghostDesktopA.png" target="_blank"><img src="assets/DanghostDesktopA.png"></img></a>
-                    <a href="assets/DanghostDesktopB.png" target="_blank"><img src="assets/DanghostDesktopB.png"></img></a>
-                </div>
-                <div class="pos">
-                    <a href="assets/DanghostDesktopD.png" target="_blank"><img src="assets/DanghostDesktopD.png"></img></a>
-                    <a href="assets/DanghostDesktopC.png" target="_blank"><img src="assets/DanghostDesktopC.png"></img></a>
-                </div>
-            <div class="txt-1">
-                <div class="tr">
-                    This game is intended for PC, Mac, and consoles.
-                </div>
-            </div>
-            <div class="txt-1">
-                Umeshu Lovers
-            </div>
-            <div class="txt-2">
-                Danghost is a creation of Umeshu Lovers Studio, located in Toulouse, France.
-            </div>
-            <div class="footer">contact us : contact@umeshulovers.com <br/> Copyright (c) 2023, Umeshu Lovers; all rights reserved.</div>
+        <img src="./assets/Arrow.png" class="arrow leftArrowChara" />
+        <img src="./assets/Arrow.png" class="arrow rightArrowChara" />
+      </div>
+      <div class="wishlistButton">
+        <div class="wishlistText">Wishlist Now !</div>
+      </div>
+    </div>
+    <!-- News section -->
+    <div id="newsSection" class="section">
+      <div class="newsCol">
+        <div class="newsTitle">Don't miss the news !</div>
+        <div class="newsDescription">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
         </div>
-    </body>
-    
+      </div>
+      <div class="subCol">
+        <div class="newsSubArea">
+          <input class="newsInput" value="Enter your email adress here" />
+          <div class="newsSubButton">Subscribe</div>
+        </div>
+        <div class="newsCheckboxArea">
+          <input type="checkbox" class="newsCheckbox" />
+          <div class="newsCheckboxDesc">CheckboxDesc</div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer section -->
+    <div id="footerSection" class="section">
+      <div class="footer">
+        <div class="footerLogo">LOGO</div>
+        <div class="footerStudio">
+          <div class="footerStudioTitle">Our studio</div>
+          <a href="https://umeshulovers.com/" class="footerStudioWebsite"
+            >Website</a
+          >
+          <a href="mailto:contact@umeshulovers.com" class="footerStudioEmail"
+            >contact@umeshulovers.com</a
+          >
+        </div>
+        <div class="footerSocials">
+          <div class="footerSocialTitle">Socials</div>
+          <div class="footerSocial facebook">FB</div>
+          <div class="footerSocial insta">IN</div>
+          <div class="footerSocial artstation">AS</div>
+          <div class="footerSocial linkedin">LN</div>
+          <div class="footerSocial steam">ST</div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
