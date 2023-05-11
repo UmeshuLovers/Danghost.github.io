@@ -182,6 +182,7 @@ iframe {
   font-size: large;
   font-weight: 700;
   margin-top: 2rem;
+  margin-bottom: 10rem;
 }
 .characters {
   margin-top: 2rem;
@@ -427,7 +428,7 @@ iframe {
   width: 2rem;
 }
 
-/* CAROUSEL TEST */
+/* PICTO CAROUSEL */
 
 #container {
   height: 20rem;
@@ -472,8 +473,8 @@ iframe {
 }
 
 #leftView {
-  height: 400px;
-  width: 150px;
+  height: 20rem;
+  width: 10rem;
   opacity: 0.5;
   border-radius: 5px;
   transform: skewy(5deg);
@@ -491,8 +492,8 @@ iframe {
 }
 
 #rightView {
-  height: 400px;
-  width: 150px;
+  height: 20rem;
+  width: 10rem;
   opacity: 0.5;
   border-radius: 5px;
   transform: skewy(-5deg);
@@ -536,6 +537,120 @@ iframe {
 }
 
 #linkTag {
+  cursor: pointer;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+/* CHARA CAROUSEL */
+
+#container2 {
+  height: 20rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#galleryContainer2 {
+  height: 25rem;
+  width: 80rem;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#galleryView2 {
+  height: 20rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainView2 {
+  height: 30rem;
+  width: 30rem;
+  border-radius: 5px;
+  background-color: #eb9100;
+  margin-left: 10px;
+  margin-right: 10px;
+  z-index: 1;
+  transition: all 1s;
+}
+
+#mainView2:hover {
+  transform: scale(1.2);
+  transition: all 1s;
+}
+
+#leftView2 {
+  height: 20rem;
+  width: 10rem;
+  opacity: 0.5;
+  border-radius: 5px;
+  transform: skewy(5deg);
+  transform-origin: top right;
+  background-color: #eb9100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+
+#leftView2:hover {
+  opacity: 1;
+  transition: all 1s;
+}
+
+#rightView2 {
+  height: 20rem;
+  width: 10rem;
+  opacity: 0.5;
+  border-radius: 5px;
+  transform: skewy(-5deg);
+  transform-origin: top left;
+  background-color: #eb9100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+
+#rightView2:hover {
+  opacity: 1;
+  transition: all 1s;
+}
+
+.navBtns2 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  opacity: 0.8;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+}
+
+.navBtns2:hover {
+  opacity: 1;
+  transition: all 1s;
+  background-color: #eb9100;
+}
+
+#navLeft2 {
+  left: 50px;
+}
+
+#navRight2 {
+  right: 50px;
+}
+
+#linkTag2 {
   cursor: pointer;
   z-index: 1;
   box-sizing: border-box;
