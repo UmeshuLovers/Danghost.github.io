@@ -270,7 +270,7 @@ iframe {
   margin-bottom: auto;
 }
 
-.wishlistmar {
+.wishlistButton {
   background-color: #7979b0; /* Green */
   border: none;
   color: white;
@@ -286,7 +286,7 @@ iframe {
   margin-left: auto;
   margin-right: auto;
 }
-.wishlistmar:hover {
+.wishlistButton:hover {
   background-color: #696988; /* Green */
 }
 
