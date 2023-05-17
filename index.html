@@ -204,9 +204,9 @@
   <script>
     let imgObject = [
       "./assets/Cleaned/TopCarousel/ImageOne.png",
-      "./assets/Cleaned/TopCarousel/ImageOne.png",
-      "./assets/Cleaned/TopCarousel/ImageOne.png",
-      "./assets/Cleaned/TopCarousel/ImageOne.png",
+      "./assets/Cleaned/TopCarousel/ImageTwo.png",
+      "./assets/Cleaned/TopCarousel/ImageThree.png",
+      "./assets/Cleaned/TopCarousel/ImageFour.png",
     ];
 
     let mainImg = 0;
@@ -273,11 +273,39 @@
 
   <!-- Chara Carousel script -->
   <script>
-    let imgObject2 = [
-      "./assets/Cleaned/CharaCarousel/FicheTatana.png",
-      "./assets/Cleaned/CharaCarousel/FicheTatana.png",
-      "./assets/Cleaned/CharaCarousel/FicheTatana.png",
-    ];
+    const url = window.location.href;
+    let imgObject2 = [];
+    if (url.includes(".fr")) {
+      imgObject2 = [
+        "./assets/Cleaned/CharaCarousel/Danghost_website_fiche_TATANA_FR.png",
+        "./assets/Cleaned/CharaCarousel/Danghost_website_fiche_TUTUT_FR.png",
+        "./assets/Cleaned/CharaCarousel/Danghost_website_fiche_KUKUPIN_FR.png",
+        "./assets/Cleaned/CharaCarousel/Danghost_website_fiche_YIYIFU_FR.png",
+        "./assets/Cleaned/CharaCarousel/Danghost_website_fiche_MOMONI_FR.png",
+        "./assets/Cleaned/CharaCarousel/Danghost_website_fiche_BARBAK_FR.png",
+        "./assets/Cleaned/CharaCarousel/Danghost_website_fiche_CRYPTE_1_FR.png",
+        "./assets/Cleaned/CharaCarousel/Danghost_website_fiche_CRYPTE_2_FR.png",
+        "./assets/Cleaned/CharaCarousel/Danghost_website_fiche_CRYPTE_3_FR.png",
+        "./assets/Cleaned/CharaCarousel/Danghost_website_fiche_CRYPTE_4_FR.png",
+        "./assets/Cleaned/CharaCarousel/Danghost_website_fiche_CRYPTE_5_FR.png",
+        "./assets/Cleaned/CharaCarousel/Danghost_website_fiche_CRYPTE_6_FR.png",
+      ];
+    } else {
+      imgObject2 = [
+        "./assets/Cleaned/CharaCarousel/Danghost_website_fiche_TATANA_EN.png",
+        "./assets/Cleaned/CharaCarousel/Danghost_website_fiche_TUTUT_EN.png",
+        "./assets/Cleaned/CharaCarousel/Danghost_website_fiche_KUKUPIN_EN.png",
+        "./assets/Cleaned/CharaCarousel/Danghost_website_fiche_YIYIFU_EN.png",
+        "./assets/Cleaned/CharaCarousel/Danghost_website_fiche_MOMONI_EN.png",
+        "./assets/Cleaned/CharaCarousel/Danghost_website_fiche_BARBAK_EN.png",
+        "./assets/Cleaned/CharaCarousel/Danghost_website_fiche_CRYPTE_1_EN.png",
+        "./assets/Cleaned/CharaCarousel/Danghost_website_fiche_CRYPTE_2_EN.png",
+        "./assets/Cleaned/CharaCarousel/Danghost_website_fiche_CRYPTE_3_EN.png",
+        "./assets/Cleaned/CharaCarousel/Danghost_website_fiche_CRYPTE_4_EN.png",
+        "./assets/Cleaned/CharaCarousel/Danghost_website_fiche_CRYPTE_5_EN.png",
+        "./assets/Cleaned/CharaCarousel/Danghost_website_fiche_CRYPTE_6_EN.png",
+      ];
+    }
 
     let mainImg2 = 0;
     let prevImg2 = imgObject2.length - 1;
@@ -287,7 +315,7 @@
       let mainView2 = document.getElementById("mainView2");
       mainView2.style.background = "url(" + imgObject2[mainImg2] + ")";
       mainView2.style.backgroundRepeat = "no-repeat";
-      mainView2.style.backgroundSize = "44rem";
+      mainView2.style.backgroundSize = "50rem";
 
       let leftView2 = document.getElementById("leftView2");
       leftView2.style.background = "url(" + imgObject2[prevImg2] + ")";
