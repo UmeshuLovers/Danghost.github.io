@@ -23,10 +23,20 @@
   <body>
     <!-- Top section -->
     <div class="section">
-      <div class="topLogo"><img class="logoImg" src="./assets/Logo.png" /></div>
+      <div class="topLogo">
+        <img class="logoImg" src="./assets/Cleaned/LogoTop.png" />
+      </div>
+      <div class="topBackground">
+        <img
+          class="topBackgroundImg"
+          src="./assets/Cleaned/BackgroundTop.png"
+        />
+      </div>
     </div>
     <!-- Menu & trailer section -->
     <div class="section">
+      <div class="upperBackground"></div>
+      <div class="lowerBackground"></div>
       <div class="topMenu">
         <a href="#aboutSection" class="menuItem">About</a>
         <a href="#charasSection" class="menuItem">Charas</a>
@@ -50,7 +60,9 @@
     <!-- Carousel section -->
     <div id="carouselSection" class="section">
       <div class="carousel">
-        <div class="carouselTitle">Want to see more ?</div>
+        <div class="carouselTitle">
+          <div class="carouselTitleText">Want to see more ?</div>
+        </div>
         <div id="container">
           <div id="galleryView">
             <div id="galleryContainer">
@@ -91,7 +103,7 @@
           </a>
         </div>
         <div class="aboutColRight">
-          <img src="./assets/DanghostDesktopD.png" class="aboutPicture" />
+          <img src="./assets/Cleaned/AboutCharas.png" class="aboutPicture" />
         </div>
       </div>
     </div>
@@ -115,9 +127,10 @@
           </div>
         </div>
       </div>
-      <div class="wishlistButton">
-        <div class="wishlistText">Wishlist Now !</div>
-      </div>
+      <a
+        class="wishlistButton"
+        href="https://store.steampowered.com/app/1812170/Danghost/?l=french"
+      ></a>
     </div>
     <!-- News section -->
     <div id="newsSection" class="section">
@@ -144,11 +157,11 @@
     <!-- Footer section -->
     <div id="footerSection" class="section">
       <div class="footer">
-        <img class="footerLogo" src="./assets/Logo.png" />
+        <img class="footerLogo" src="./assets/Cleaned/LogoUmeshuPurple.png" />
         <div class="footerStudio">
-          <div class="footerStudioTitle">Our studio</div>
+          <div class="footerStudioTitle">Our studio :</div>
           <a href="https://umeshulovers.com/" class="footerStudioWebsite"
-            >Website</a
+            >www.umeshulovers.com</a
           >
           <a href="mailto:contact@umeshulovers.com" class="footerStudioEmail"
             >contact@umeshulovers.com</a
@@ -156,13 +169,33 @@
         </div>
 
         <div class="footerSocials">
-          <div class="footerSocialTitle">Socials</div>
+          <div class="footerSocialTitle">Our socials :</div>
           <div class="footerSocialIcons">
-            <a href="https://www.facebook.com/Umeshulovers/"
-              ><img src="./assets/facebook.png" class="footerSocial facebook"
+            <a
+              href="https://store.steampowered.com/app/1812170/Danghost/?l=french"
+              ><img
+                src="./assets/Cleaned/Social/STEAM.png"
+                class="footerSocial steam"
             /></a>
             <a href="https://twitter.com/UmeshuLovers/"
-              ><img src="./assets/twitter.png" class="footerSocial twitter"
+              ><img
+                src="./assets/Cleaned/Social/DISCORD.png"
+                class="footerSocial discord"
+            /></a>
+            <a href="https://www.facebook.com/Umeshulovers/"
+              ><img
+                src="./assets/Cleaned/Social/TWITTER.png"
+                class="footerSocial twitter"
+            /></a>
+            <a href="https://twitter.com/UmeshuLovers/"
+              ><img
+                src="./assets/Cleaned/Social/INSTA.png"
+                class="footerSocial instagram"
+            /></a>
+            <a href="https://twitter.com/UmeshuLovers/"
+              ><img
+                src="./assets/Cleaned/Social/YT.png"
+                class="footerSocial youtube"
             /></a>
           </div>
         </div>
@@ -173,10 +206,10 @@
   <!-- Image Carousel script -->
   <script>
     let imgObject = [
-      "./assets/pictCarousel/DanghostDesktopA.png",
-      "./assets/pictCarousel/DanghostDesktopB.png",
-      "./assets/pictCarousel/DanghostDesktopC.png",
-      "./assets/pictCarousel/DanghostDesktopD.png",
+      "./assets/Cleaned/TopCarousel/ImageOne.png",
+      "./assets/Cleaned/TopCarousel/ImageOne.png",
+      "./assets/Cleaned/TopCarousel/ImageOne.png",
+      "./assets/Cleaned/TopCarousel/ImageOne.png",
     ];
 
     let mainImg = 0;
@@ -187,17 +220,17 @@
       let mainView = document.getElementById("mainView");
       mainView.style.background = "url(" + imgObject[mainImg] + ")";
       mainView.style.backgroundRepeat = "no-repeat";
-      mainView.style.backgroundSize = "30rem";
+      mainView.style.backgroundSize = "48rem";
 
       let leftView = document.getElementById("leftView");
       leftView.style.background = "url(" + imgObject[prevImg] + ")";
       leftView.style.backgroundRepeat = "no-repeat";
-      leftView.style.backgroundSize = "30rem";
+      leftView.style.backgroundSize = "18rem";
 
       let rightView = document.getElementById("rightView");
       rightView.style.background = "url(" + imgObject[nextImg] + ")";
       rightView.style.backgroundRepeat = "no-repeat";
-      rightView.style.backgroundSize = "30rem";
+      rightView.style.backgroundSize = "18rem";
 
       let linkTag = document.getElementById("linkTag");
       linkTag.href = imgObject[mainImg];
@@ -244,13 +277,9 @@
   <!-- Chara Carousel script -->
   <script>
     let imgObject2 = [
-      "./assets/charaCarousel/Danghost_Bleu.png",
-      "./assets/charaCarousel/Tatana.png",
-      "./assets/charaCarousel/Danghost_Vert.png",
-      "./assets/charaCarousel/Danghost_Jaune.png",
-      "./assets/charaCarousel/Danghost_Rouge.png",
-      "./assets/charaCarousel/Danghost_Turquoise.png",
-      "./assets/charaCarousel/Danghost_Violet.png",
+      "./assets/Cleaned/CharaCarousel/FicheTatana.png",
+      "./assets/Cleaned/CharaCarousel/FicheTatana.png",
+      "./assets/Cleaned/CharaCarousel/FicheTatana.png",
     ];
 
     let mainImg2 = 0;
@@ -261,17 +290,17 @@
       let mainView2 = document.getElementById("mainView2");
       mainView2.style.background = "url(" + imgObject2[mainImg2] + ")";
       mainView2.style.backgroundRepeat = "no-repeat";
-      mainView2.style.backgroundSize = "30rem";
+      mainView2.style.backgroundSize = "44rem";
 
       let leftView2 = document.getElementById("leftView2");
       leftView2.style.background = "url(" + imgObject2[prevImg2] + ")";
       leftView2.style.backgroundRepeat = "no-repeat";
-      leftView2.style.backgroundSize = "30rem";
+      leftView2.style.backgroundSize = "10rem";
 
       let rightView2 = document.getElementById("rightView2");
       rightView2.style.background = "url(" + imgObject2[nextImg2] + ")";
       rightView2.style.backgroundRepeat = "no-repeat";
-      rightView2.style.backgroundSize = "30rem";
+      rightView2.style.backgroundSize = "10rem";
 
       let linkTag2 = document.getElementById("linkTag2");
       linkTag2.href = imgObject2[mainImg2];

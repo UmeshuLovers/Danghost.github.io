@@ -37,6 +37,23 @@ iframe {
   margin-left: 0;
 }
 
+.upperBackground {
+  background-image: url("../assets/Cleaned/UpperBackground.png");
+  position: absolute;
+  z-index: -11;
+  width: 100vw;
+  height: 200vh;
+  margin-top: 50vh;
+}
+.lowerBackground {
+  background-image: url("../assets/Cleaned/LowerBackground.png");
+  position: absolute;
+  z-index: -11;
+  width: 100vw;
+  height: 170vh;
+  margin-top: 200vh;
+  background-repeat: no-repeat;
+}
 /* MenuSection */
 .menuItem {
   margin: 10px;
@@ -50,12 +67,16 @@ iframe {
 }
 
 .trailer {
-  width: 48rem;
+  width: 49rem;
   height: 27rem;
+  padding: 40px;
+  padding-top: 41px;
+  background-size: 55rem;
+  background-position: top;
+  background-image: url("../assets/Cleaned/TrailerBorder.png");
 }
 
 .topLogo {
-  background-color: rgb(96, 85, 157);
   margin: 0;
   height: 50rem;
   width: 100vw;
@@ -69,6 +90,13 @@ iframe {
   margin-left: auto;
   margin-right: auto;
 }
+.topBackgroundImg {
+  width: 100vw;
+  z-index: -10;
+}
+.topBackground {
+  position: absolute;
+}
 /* CarouselSection */
 
 .carousel {
@@ -79,6 +107,17 @@ iframe {
   font-size: larger;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-position: top;
+  color: white;
+  background-image: url(../assets/Cleaned/BrushBlack.png);
+  background-size: 23rem;
+  padding: 40px;
+  width: 18rem;
+  background-repeat: no-repeat;
+  display: flex;
+}
+.carouselTitleText {
+  margin: auto;
 }
 
 .carouselItems {
@@ -111,10 +150,12 @@ iframe {
 /* AboutSection */
 
 #aboutSection {
-  background-color: rgb(96, 85, 157);
-  margin: 0;
+  background-image: url("../assets/Cleaned/AboutBG.png");
   width: 100vw;
   color: white;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  height: 50vh;
 }
 .about {
   margin-top: 1rem;
@@ -133,6 +174,7 @@ iframe {
   font-size: x-large;
   font-weight: 900;
   margin-left: 13rem;
+  margin-top: 5rem;
 }
 .aboutTitle {
   margin-left: 10rem;
@@ -143,20 +185,29 @@ iframe {
   font-weight: 700;
 }
 .aboutText {
+  background-image: url(../assets/Cleaned/DescriptionBG.png);
+  color: black;
   margin-left: 10rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  max-width: 50%;
-  margin-right: 10rem;
+  width: 30rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 3rem;
+  margin-right: -6rem;
+  background-size: 35rem;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 .aboutPicture {
-  width: 15rem;
-  height: 20rem;
-  margin-right: 10rem;
-  margin-bottom: 1rem;
+  width: 36.125rem;
+  height: 34rem;
+  margin-top: -0.5rem;
+  margin-right: 1rem;
 }
 .releaseDateButton {
-  background-color: #49498a; /* Green */
+  background-image: url(../assets/Cleaned/ReleaseBackground.png);
+  background-size: 26rem;
+  background-position: top;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -168,21 +219,34 @@ iframe {
   margin-bottom: 1rem;
   font-size: large;
   font-weight: 700;
-  width: 50%;
+  width: 20em;
   margin-left: 10rem;
   margin-right: auto;
   cursor: pointer;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-top: 15rem;
 }
 .releaseDateButton:hover {
-  background-color: #37376a; /* Green */
+  color: #37376a; /* Green */
 }
 
 /* CharaSection */
 .charaSectionTitle {
-  font-size: large;
+  font-size: xx-large;
   font-weight: 700;
-  margin-top: 2rem;
+  color: white;
   margin-bottom: 10rem;
+  background-image: url(../assets/Cleaned/CharaTitleBG.png);
+  background-size: 29rem;
+  background-position: top;
+  padding-top: 3.3rem;
+  padding-bottom: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  background-repeat: no-repeat;
 }
 .characters {
   margin-top: 2rem;
@@ -278,23 +342,20 @@ iframe {
 }
 
 .wishlistButton {
-  background-color: #7979b0; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-  width: 13rem;
-  height: 6rem;
-  margin-left: auto;
-  margin-right: auto;
+  background-image: url(../assets/Cleaned/WishlistButton.png);
+  background-size: 50vw;
+  position: absolute;
+  background-position: top;
+  width: 50vw;
+  right: 0px;
+  background-repeat: no-repeat;
+  height: 21.1rem;
+  margin-right: 0rem;
+  margin-top: 49rem;
+  z-index: 1;
 }
 .wishlistButton:hover {
-  background-color: #696988; /* Green */
+  cursor: pointer;
 }
 
 .wishlistText {
@@ -305,9 +366,11 @@ iframe {
 
 /* NewsSection */
 #newsSection {
-  background-color: rgb(96, 85, 157);
+  background-image: url(../assets/Cleaned/NewsBG.png);
+  background-size: 100vw;
   margin: 0;
-  height: 10rem;
+  height: 14rem;
+  z-index: 2;
   width: 100vw;
   color: white;
   flex-direction: row;
@@ -321,10 +384,19 @@ iframe {
 }
 
 .newsTitle {
+  background-image: url(../assets/Cleaned/BrushWhite.png);
+  background-size: 20rem;
+  background-position: top;
+  background-repeat: no-repeat;
   font-size: xx-large;
+  color: black;
   font-weight: 900;
-  margin-top: 1rem;
-  margin-left: 10rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-left: 8rem;
+  margin-top: 2rem;
 }
 .newsDescription {
   margin-left: 10rem;
@@ -334,26 +406,33 @@ iframe {
   margin: 1rem;
   background-color: transparent;
   border: none;
-  color: white;
+  color: black;
   width: 20rem;
   cursor: pointer;
 }
 .newsInput:focus {
   outline: none;
 }
-.newsSubmar {
-  margin: 1rem;
+.newsSubButton {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 5px;
+  width: 100px;
 }
 .newsSubArea {
-  background-color: #37376a;
+  background-color: #ffffff;
   margin: auto;
-  margin-right: 10rem;
+  margin-right: 4rem;
   margin-bottom: 0rem;
-  width: 20rem;
+  color: black;
+  width: 30rem;
   cursor: pointer;
 }
 .newsSubArea:hover {
-  background-color: #20203f;
+  background-color: #e1e1e1;
 }
 .newsCheckboxArea {
   margin: auto;
@@ -384,33 +463,32 @@ iframe {
 }
 .footerStudio {
   flex-direction: column;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 .footerStudioTitle {
   font-size: large;
   font-weight: 700;
   margin-left: 0;
+  margin-bottom: 0.5rem;
 }
 .footerStudioWebsite {
-  margin-left: 0.5rem;
   text-decoration: none;
   color: black;
 }
 
 .footerStudioEmail {
-  margin-left: 0.5rem;
   text-decoration: none;
   color: black;
 }
 
 .footerLogo {
-  margin-left: 1rem;
-  margin-right: 10rem;
+  margin-left: 17rem;
+  margin-right: 1rem;
   width: 15rem;
 }
 .footerSocials {
-  margin-left: 8rem;
+  margin-left: 2rem;
   margin-right: 1rem;
   flex-direction: column;
 }
@@ -418,6 +496,7 @@ iframe {
   font-size: large;
   font-weight: 700;
   margin-bottom: 1rem;
+  margin-left: 1rem;
 }
 .footerSocialIcons {
   flex-direction: row;
@@ -433,6 +512,7 @@ iframe {
 #container {
   height: 20rem;
   width: 100%;
+  margin-top: 10rem;
   box-sizing: border-box;
 }
 
@@ -457,8 +537,8 @@ iframe {
 }
 
 #mainView {
-  height: 30rem;
-  width: 30rem;
+  height: 28rem;
+  width: 48rem;
   border-radius: 5px;
   background-color: #eb9100;
   margin-left: 10px;
@@ -468,7 +548,7 @@ iframe {
 }
 
 #mainView:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: all 1s;
 }
 
@@ -548,6 +628,7 @@ iframe {
   height: 20rem;
   width: 100%;
   box-sizing: border-box;
+  margin-bottom: 20rem;
 }
 
 #galleryContainer2 {
@@ -571,8 +652,8 @@ iframe {
 }
 
 #mainView2 {
-  height: 30rem;
-  width: 30rem;
+  height: 32rem;
+  width: 44rem;
   border-radius: 5px;
   background-color: #eb9100;
   margin-left: 10px;
@@ -582,7 +663,7 @@ iframe {
 }
 
 #mainView2:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: all 1s;
 }
 
