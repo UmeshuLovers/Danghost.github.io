@@ -13,7 +13,7 @@
 
 @font-face {
   font-family: "snicker";
-  src: url("../assets/snicker-bold.otf");
+  src: url("../assets/Cleaned/snicker-bold.otf");
   font-weight: normal;
   font-style: normal;
 }
@@ -46,24 +46,30 @@ iframe {
   margin-left: 0;
 }
 
+.upperArea {
+  flex-direction: column;
+}
+.lowerArea {
+  flex-direction: column;
+}
 .upperBackground {
-  background-image: url("../assets/Cleaned/UpperBackground.png");
-  position: absolute;
-  z-index: -11;
+  background-image: url("../assets/Cleaned/TiledUpper.png");
   width: 100vw;
-  height: 200vh;
+  height: 300vh;
+  position: absolute;
+  z-index: -10;
   background-size: 100vw;
-  margin-top: 50vh;
+  flex-direction: column;
 }
 .lowerBackground {
-  background-image: url("../assets/Cleaned/LowerBackground.png");
-  position: absolute;
-  z-index: -11;
+  background-image: url("../assets/Cleaned/TiledLower.png");
   width: 100vw;
-  height: 170vh;
-  margin-top: 230vh;
+  height: 180vh;
+  margin-top: -50vh;
+  position: absolute;
+  z-index: -9;
   background-size: 100vw;
-  background-repeat: no-repeat;
+  flex-direction: column;
 }
 /* MenuSection */
 .menuItem {
@@ -78,8 +84,8 @@ iframe {
 }
 
 .trailer {
-  width: 60rem;
-  height: 33.75rem;
+  width: 50rem;
+  height: 28.125rem;
   padding: 40px;
   background-repeat: no-repeat;
   padding-top: 41px;
@@ -177,7 +183,11 @@ iframe {
 
 .aboutColLeft {
   flex-direction: column;
-  margin-right: 13rem;
+}
+.aboutColRight {
+  flex-direction: column;
+  position: absolute;
+  right: 0px;
 }
 .aboutSection {
   margin-left: 1rem;
@@ -221,7 +231,7 @@ iframe {
   font-size: 0.9rem;
 }
 .aboutPicture {
-  height: 40rem;
+  height: 35rem;
   margin-top: -0.5rem;
   margin-right: 1rem;
 }
@@ -396,11 +406,12 @@ iframe {
   background-image: url(../assets/Cleaned/NewsBG.png);
   background-size: 100vw;
   margin: 0;
-  height: 14rem;
+  height: 17vw;
   z-index: 2;
   width: 100vw;
   color: white;
   flex-direction: row;
+  background-repeat: no-repeat;
 }
 
 .newsCol {
@@ -484,6 +495,7 @@ iframe {
   width: 100vw;
   flex-direction: row;
   margin-bottom: 0;
+  height: 10vh;
 }
 .footer {
   flex-direction: row;
@@ -494,6 +506,8 @@ iframe {
   flex-direction: column;
   margin-left: 5rem;
   margin-right: 5rem;
+  position: absolute;
+  right: 30vw;
 }
 .footerStudioTitle {
   font-size: large;
@@ -512,14 +526,16 @@ iframe {
 }
 
 .footerLogo {
-  margin-left: 17rem;
-  margin-right: 1rem;
   width: 15rem;
+  position: absolute;
+  left: 10vw;
 }
 .footerSocials {
   margin-left: 2rem;
   margin-right: 1rem;
   flex-direction: column;
+  position: absolute;
+  right: 0px;
 }
 .footerSocialTitle {
   font-size: large;
@@ -764,4 +780,66 @@ iframe {
   cursor: pointer;
   z-index: 1;
   box-sizing: border-box;
+}
+
+@media (max-width: 1340px) {
+  .aboutPicture {
+    height: 28rem;
+  }
+  #aboutSection {
+    height: 40vh;
+  }
+  .wishlistButton {
+    margin-top: 51rem;
+  }
+}
+@media (max-width: 1140px) {
+  .topMenu {
+    margin-top: 10rem;
+  }
+  #aboutSection {
+    height: 30vh;
+  }
+  .aboutPicture {
+    height: 23rem;
+  }
+  .releaseDateButton {
+    margin-top: 15rem;
+    margin-left: 4rem;
+  }
+  .aboutText {
+    margin-left: 4rem;
+  }
+  .aboutTitle {
+    margin-left: 5rem;
+    margin-top: -0.5rem;
+    margin-bottom: 0rem;
+  }
+  .aboutSectionName {
+    margin-left: 8rem;
+    margin-top: 1rem;
+  }
+  .lowerBackground {
+    margin-top: -20vh;
+    height: 150vh;
+  }
+  .upperBackground {
+    height: 200vh;
+  }
+  .wishlistButton {
+    margin-top: 54.1rem;
+  }
+  .newsTitle {
+    font-size: large;
+    background-size: 15em;
+  }
+  .newsDescription {
+    font-size: small;
+  }
+}
+@media (max-width: 980px) {
+  .lowerBackground {
+    margin-top: -20vh;
+    height: 86vh;
+  }
 }

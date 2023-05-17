@@ -22,61 +22,57 @@
   </head>
   <body>
     <!-- Top section -->
-    <div class="section">
-      <div class="topLogo">
-        <img class="logoImg" src="./assets/Cleaned/LogoTop.png" />
-      </div>
-      <div class="topBackground">
-        <img
-          class="topBackgroundImg"
-          src="./assets/Cleaned/BackgroundTop.png"
-        />
-      </div>
-    </div>
-    <!-- Menu & trailer section -->
-    <div class="section">
+    <div class="upperArea">
       <div class="upperBackground"></div>
-      <div class="lowerBackground"></div>
-      <div class="topMenu">
-        <a href="#aboutSection" class="menuItem">About</a>
-        <a href="#charasSection" class="menuItem">Charas</a>
-        <a href="#newsSection" class="menuItem">News</a>
-        <a href="#footerSection" class="menuItem">Contact</a>
-        <a
-          href="https://store.steampowered.com/app/1812170/Danghost"
-          class="menuItem"
-          >Steam</a
-        >
-      </div>
-      <div class="trailer">
-        <iframe
-          src="https://www.youtube.com/embed/_VonpkEWBlg"
-          frameborder="0"
-          allow="autoplay; encrypted-media"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div>
-    <!-- Carousel section -->
-    <div id="carouselSection" class="section">
-      <div class="carousel">
-        <div class="carouselTitle">
-          <div class="carouselTitleText">Want to see more ?</div>
+
+      <div class="section">
+        <div class="topLogo">
+          <img class="logoImg" src="./assets/Cleaned/LogoTop.png" />
         </div>
-        <div id="container">
-          <div id="galleryView">
-            <div id="galleryContainer">
-              <div id="leftView"></div>
-              <button id="navLeft" class="navBtns">
-                <i class="fas fa-arrow-left fa-3x"></i>
-              </button>
-              <a id="linkTag">
-                <div id="mainView"></div>
-              </a>
-              <div id="rightView"></div>
-              <button id="navRight" class="navBtns">
-                <i class="fas fa-arrow-right fa-3x"></i>
-              </button>
+        <div class="topBackground">
+          <img
+            class="topBackgroundImg"
+            src="./assets/Cleaned/BackgroundTop.png"
+          />
+        </div>
+      </div>
+      <!-- Menu & trailer section -->
+      <div class="section">
+        <div class="topMenu">
+          <a href="#aboutSection" class="menuItem">About</a>
+          <a href="#charasSection" class="menuItem">Charas</a>
+          <a href="#newsSection" class="menuItem">News</a>
+          <a href="#footerSection" class="menuItem">Contact</a>
+          <a
+            href="https://store.steampowered.com/app/1812170/Danghost"
+            class="menuItem"
+            >Steam</a
+          >
+        </div>
+        <div class="trailer">
+          <iframe
+            src="https://www.youtube.com/embed/_VonpkEWBlg"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <!-- Carousel section -->
+      <div id="carouselSection" class="section">
+        <div class="carousel">
+          <div class="carouselTitle">
+            <div class="carouselTitleText">Want to see more ?</div>
+          </div>
+          <div id="container">
+            <div id="galleryView">
+              <div id="galleryContainer">
+                <div id="leftView"></div>
+                <a id="linkTag">
+                  <div id="mainView"></div>
+                </a>
+                <div id="rightView"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -106,30 +102,33 @@
         </div>
       </div>
     </div>
-    <!-- Characters section -->
-    <div id="charasSection" class="section">
-      <div class="charaSectionTitle">12 uniques characters !</div>
-      <div id="container2">
-        <div id="galleryView2">
-          <div id="galleryContainer2">
-            <div id="leftView2"></div>
-            <button id="navLeft2" class="navBtns2">
-              <i class="fas fa-arrow-left fa-3x"></i>
-            </button>
-            <a id="linkTag2">
-              <div id="mainView2"></div>
-            </a>
-            <div id="rightView2"></div>
-            <button id="navRight2" class="navBtns2">
-              <i class="fas fa-arrow-right fa-3x"></i>
-            </button>
+    <div class="lowerArea">
+      <div class="lowerBackground"></div>
+      <!-- Characters section -->
+      <div id="charasSection" class="section">
+        <div class="charaSectionTitle">12 uniques characters !</div>
+        <div id="container2">
+          <div id="galleryView2">
+            <div id="galleryContainer2">
+              <div id="leftView2"></div>
+              <button id="navLeft2" class="navBtns2">
+                <i class="fas fa-arrow-left fa-3x"></i>
+              </button>
+              <a id="linkTag2">
+                <div id="mainView2"></div>
+              </a>
+              <div id="rightView2"></div>
+              <button id="navRight2" class="navBtns2">
+                <i class="fas fa-arrow-right fa-3x"></i>
+              </button>
+            </div>
           </div>
         </div>
+        <a
+          class="wishlistButton"
+          href="https://store.steampowered.com/app/1812170/Danghost/?l=english"
+        ></a>
       </div>
-      <a
-        class="wishlistButton"
-        href="https://store.steampowered.com/app/1812170/Danghost/?l=english"
-      ></a>
     </div>
     <!-- News section -->
     <div id="newsSection" class="section">
@@ -217,7 +216,13 @@
       let mainView = document.getElementById("mainView");
       mainView.style.background = "url(" + imgObject[mainImg] + ")";
       mainView.style.backgroundRepeat = "no-repeat";
-      mainView.style.backgroundSize = "48rem";
+      if (window.matchMedia("(min-width: 1140px)").matches) {
+        mainView.style.backgroundSize = "48rem";
+        mainView.style.width = "48rem";
+      } else {
+        mainView.style.backgroundSize = "38rem";
+        mainView.style.width = "38rem";
+      }
 
       let leftView = document.getElementById("leftView");
       leftView.style.background = "url(" + imgObject[prevImg] + ")";
@@ -256,8 +261,6 @@
       loadGallery();
     }
 
-    document.getElementById("navRight").addEventListener("click", scrollRight);
-    document.getElementById("navLeft").addEventListener("click", scrollLeft);
     document.getElementById("rightView").addEventListener("click", scrollRight);
     document.getElementById("leftView").addEventListener("click", scrollLeft);
     document.addEventListener("keyup", function (e) {
@@ -315,17 +318,23 @@
       let mainView2 = document.getElementById("mainView2");
       mainView2.style.background = "url(" + imgObject2[mainImg2] + ")";
       mainView2.style.backgroundRepeat = "no-repeat";
-      mainView2.style.backgroundSize = "50rem";
+      if (window.matchMedia("(min-width: 1140px)").matches) {
+        mainView2.style.backgroundSize = "50rem";
+        mainView2.style.width = "50rem";
+      } else {
+        mainView2.style.backgroundSize = "40rem";
+        mainView2.style.width = "40rem";
+      }
 
       let leftView2 = document.getElementById("leftView2");
       leftView2.style.background = "url(" + imgObject2[prevImg2] + ")";
       leftView2.style.backgroundRepeat = "no-repeat";
-      leftView2.style.backgroundSize = "10rem";
+      leftView2.style.backgroundSize = "20rem";
 
       let rightView2 = document.getElementById("rightView2");
       rightView2.style.background = "url(" + imgObject2[nextImg2] + ")";
       rightView2.style.backgroundRepeat = "no-repeat";
-      rightView2.style.backgroundSize = "10rem";
+      rightView2.style.backgroundSize = "20rem";
 
       let linkTag2 = document.getElementById("linkTag2");
       linkTag2.href = imgObject2[mainImg2];
