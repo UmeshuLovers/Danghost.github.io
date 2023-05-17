@@ -216,12 +216,19 @@
       let mainView = document.getElementById("mainView");
       mainView.style.background = "url(" + imgObject[mainImg] + ")";
       mainView.style.backgroundRepeat = "no-repeat";
-      if (window.matchMedia("(min-width: 1140px)").matches) {
+
+      if (window.matchMedia("(min-width: 1800px)").matches) {
+        mainView.style.backgroundSize = "58rem";
+        mainView.style.width = "58rem";
+        mainView.style.height = "36rem";
+      } else if (window.matchMedia("(min-width: 1140px)").matches) {
         mainView.style.backgroundSize = "48rem";
         mainView.style.width = "48rem";
+        mainView.style.height = "33rem";
       } else {
         mainView.style.backgroundSize = "38rem";
         mainView.style.width = "38rem";
+        mainView.style.height = "28rem";
       }
 
       let leftView = document.getElementById("leftView");
@@ -318,7 +325,11 @@
       let mainView2 = document.getElementById("mainView2");
       mainView2.style.background = "url(" + imgObject2[mainImg2] + ")";
       mainView2.style.backgroundRepeat = "no-repeat";
-      if (window.matchMedia("(min-width: 1140px)").matches) {
+      if (window.matchMedia("(min-width: 1800px)").matches) {
+        mainView2.style.backgroundSize = "60rem";
+        mainView2.style.width = "60rem";
+        mainView2.style.height = "40rem";
+      } else if (window.matchMedia("(min-width: 1140px)").matches) {
         mainView2.style.backgroundSize = "50rem";
         mainView2.style.width = "50rem";
       } else {
