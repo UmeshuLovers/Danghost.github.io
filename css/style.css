@@ -449,6 +449,7 @@ iframe {
   background-repeat: no-repeat;
   font-size: xx-large;
   color: black;
+  width: 17rem;
   font-weight: 900;
   padding-top: 1.2rem;
   padding-bottom: 1rem;
@@ -458,7 +459,8 @@ iframe {
   margin-top: 2rem;
 }
 .newsDescription {
-  margin-left: 10rem;
+  margin-left: 2rem;
+  margin-top: 3rem;
   max-width: 60%;
 }
 .newsInput {
@@ -476,23 +478,17 @@ iframe {
   background-color: black;
   color: white;
   padding: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
   border-radius: 5px;
   width: 15rem;
   cursor: pointer;
 }
 .newsSubArea {
-  /* background-color: #ffffff; */
-  margin: auto;
-  margin-right: 4rem;
+  margin-top: 1rem;
+  margin-left: 5rem;
   margin-bottom: 0rem;
   color: black;
   width: 30rem;
   cursor: pointer;
-}
-.newsSubArea:hover {
-  /* background-color: #e1e1e1; */
 }
 .newsCheckboxArea {
   margin: auto;
@@ -853,6 +849,7 @@ iframe {
   }
   .newsTitle {
     font-size: large;
+    width: 15rem;
     background-size: 15em;
   }
   .newsDescription {
