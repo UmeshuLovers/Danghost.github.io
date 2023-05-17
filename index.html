@@ -21,6 +21,9 @@
     <link rel="icon" href="favicon.ico" />
   </head>
   <body>
+    <a class="languageButton" id="languageButton" href="www.danghost.com?ln=fr"
+      >-> fr</a
+    >
     <!-- Top section -->
     <div class="upperArea">
       <div class="upperBackground"></div>
@@ -39,10 +42,10 @@
       <!-- Menu & trailer section -->
       <div class="section">
         <div class="topMenu">
-          <a href="#aboutSection" class="menuItem">About</a>
-          <a href="#charasSection" class="menuItem">Charas</a>
-          <a href="#newsSection" class="menuItem">News</a>
-          <a href="#footerSection" class="menuItem">Contact</a>
+          <a href="#aboutSection" class="menuItem" id="tlText_1">About</a>
+          <a href="#charasSection" class="menuItem" id="tlText_2">Charas</a>
+          <a href="#newsSection" class="menuItem" id="tlText_3">News</a>
+          <a href="#footerSection" class="menuItem" id="tlText_4">Contact</a>
           <a
             href="https://store.steampowered.com/app/1812170/Danghost"
             class="menuItem"
@@ -62,7 +65,9 @@
       <div id="carouselSection" class="section">
         <div class="carousel">
           <div class="carouselTitle">
-            <div class="carouselTitleText">Want to see more ?</div>
+            <div class="carouselTitleText" id="tlText_5">
+              Want to see more ?
+            </div>
           </div>
           <div id="container">
             <div id="galleryView">
@@ -82,9 +87,11 @@
     <div id="aboutSection" class="section">
       <div class="about">
         <div class="aboutColLeft">
-          <div class="aboutSectionName">About</div>
-          <div class="aboutTitle">Danghosts, exciting arcade game</div>
-          <div class="aboutText">
+          <div class="aboutSectionName" id="tlText_1">About</div>
+          <div class="aboutTitle" id="tlText_6">
+            Danghosts, exciting arcade game
+          </div>
+          <div class="aboutText" id="tlText_7">
             Danghost is an arcade puzzle game, inspired by fighting games, in
             which you play an exorcist who needs to hoover up small ghosts. Make
             combos, use unique spells and beat your opponents! Playable in
@@ -94,7 +101,9 @@
           <a
             class="releaseDateButton"
             href="https://store.steampowered.com/app/1812170/Danghost"
-            ><div class="releaseDateText">Release September 2023 !</div>
+            ><div class="releaseDateText" id="tlText_8">
+              Release September 2023 !
+            </div>
           </a>
         </div>
         <div class="aboutColRight">
@@ -106,7 +115,9 @@
       <div class="lowerBackground"></div>
       <!-- Characters section -->
       <div id="charasSection" class="section">
-        <div class="charaSectionTitle">12 uniques characters !</div>
+        <div class="charaSectionTitle" id="tlText_9">
+          12 uniques characters !
+        </div>
         <div id="container2">
           <div id="galleryView2">
             <div id="galleryContainer2">
@@ -133,8 +144,8 @@
     <!-- News section -->
     <div id="newsSection" class="section">
       <div class="newsCol">
-        <div class="newsTitle">Don't miss the news !</div>
-        <div class="newsDescription">
+        <div class="newsTitle" id="tlText_10">Don't miss the news !</div>
+        <div class="newsDescription" id="tlText_11">
           Sign-up for the Danghost newsletter and know about all future beta
           sessions ! You will also be added to our free key lottery !
         </div>
@@ -142,11 +153,13 @@
       <div class="subCol">
         <div class="newsSubArea">
           <input class="newsInput" placeholder="Enter your email adress here" />
-          <div class="newsSubButton">Subscribe</div>
+          <div class="newsSubButton" id="tlText_12">Subscribe</div>
         </div>
         <div class="newsCheckboxArea">
           <input type="checkbox" class="newsCheckbox" />
-          <div class="newsCheckboxDesc">I want to join the lottery draw</div>
+          <div class="newsCheckboxDesc" id="tlText_13">
+            I want to join the lottery draw
+          </div>
         </div>
       </div>
     </div>
@@ -155,7 +168,7 @@
       <div class="footer">
         <img class="footerLogo" src="./assets/Cleaned/LogoUmeshuPurple.png" />
         <div class="footerStudio">
-          <div class="footerStudioTitle">Our studio :</div>
+          <div class="footerStudioTitle" id="tlText_14">Our studio :</div>
           <a href="https://umeshulovers.com/" class="footerStudioWebsite"
             >www.umeshulovers.com</a
           >
@@ -165,7 +178,7 @@
         </div>
 
         <div class="footerSocials">
-          <div class="footerSocialTitle">Our socials :</div>
+          <div class="footerSocialTitle" id="tlText_15">Our socials :</div>
           <div class="footerSocialIcons">
             <a
               href="https://store.steampowered.com/app/1812170/Danghost/?l=english"
@@ -283,9 +296,11 @@
 
   <!-- Chara Carousel script -->
   <script>
-    const url = window.location.href;
+    let queryString2 = window.location.search;
+    let urlParams2 = new URLSearchParams(queryString2);
+    let language2 = urlParams2.get("ln");
     let imgObject2 = [];
-    if (url.includes(".fr")) {
+    if (language2 == "fr") {
       imgObject2 = [
         "./assets/Cleaned/CharaCarousel/Danghost_website_fiche_TATANA_FR.png",
         "./assets/Cleaned/CharaCarousel/Danghost_website_fiche_TUTUT_FR.png",
@@ -391,5 +406,48 @@
     });
 
     loadGallery2();
+  </script>
+  <script>
+    // Setting language
+    let queryString = window.location.search;
+    let urlParams = new URLSearchParams(queryString);
+    let language = urlParams.get("ln");
+    if (!language) {
+      language = "en";
+    }
+    switch (language) {
+      case "fr":
+        document.getElementById("languageButton").textContent = "-> en";
+        document.getElementById("languageButton").href = "www.danghost.com";
+        document.getElementById("tlText_1").textContent = "À propos";
+        document.getElementById("tlText_2").textContent = "Persos";
+        document.getElementById("tlText_3").textContent = "News";
+        document.getElementById("tlText_4").textContent = "Contact";
+        document.getElementById("tlText_5").textContent = "En savoir plus ?";
+        document.getElementById("tlText_6").textContent =
+          "Danghost, jeu d'arcade survolté";
+        document.getElementById("tlText_7").textContent =
+          "Danghost est un jeu puzzle-arcade inspiré des jeux de combats. Vous incarnez un exorciste qui doit aspirer des danghosts. Vous réaliserez un maximum de combos et utiliserez des sorts uniques pour battre vos adversaires. Jouable en solo, c'est avec le mode multi que le jeu révèlera tout son piquant !";
+        document.getElementById("tlText_8").textContent =
+          "Sortie septembre 2023 !";
+        document.getElementById("tlText_9").textContent =
+          "12 personnages uniques !";
+        document.getElementById("tlText_10").textContent = "Ne manquez rien !";
+        document.getElementById("tlText_11").textContent =
+          "Inscrivez-vous à la newsletter de Danghost et soyez informé de toutes les futures sessions de bêta ! Vous serez aussi inscrits à nos tirages au sort pour remporter des clefs du jeu !";
+        document.getElementById("tlText_12").textContent = "Souscrivez";
+        document.getElementById("tlText_13").textContent =
+          "Je veux être participer aux tirages aux sort";
+        document.getElementById("tlText_14").textContent = "Notre studio :";
+        document.getElementById("tlText_15").textContent = "Nos réseaux :";
+        break;
+      case "en":
+        document.getElementById("languageButton").textContent = "-> fr";
+        document.getElementById("languageButton").href =
+          "www.danghost.com?ln=fr";
+      default:
+        // As in the html
+        break;
+    }
   </script>
 </html>
