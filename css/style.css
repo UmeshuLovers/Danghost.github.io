@@ -124,6 +124,9 @@ iframe {
 }
 .carouselTitleText {
   margin: auto;
+  font-size: xx-large;
+  margin-top: -0.7rem;
+  margin-bottom: -1rem;
 }
 
 .carouselItems {
@@ -210,9 +213,15 @@ iframe {
   margin-top: -0.5rem;
   margin-right: 1rem;
 }
+.releaseDateText {
+  display: flex;
+  margin-top: -0.8rem;
+  margin-left: 3.3rem;
+  font-size: larger;
+}
 .releaseDateButton {
   background-image: url(../assets/Cleaned/ReleaseBackground.png);
-  background-size: 26rem;
+  background-size: 20rem;
   background-position: top;
   border: none;
   color: white;
@@ -246,9 +255,9 @@ iframe {
   color: white;
   margin-bottom: 10rem;
   background-image: url(../assets/Cleaned/CharaTitleBG.png);
-  background-size: 29rem;
+  background-size: 31rem;
   background-position: top;
-  padding-top: 3.3rem;
+  padding-top: 3.6rem;
   padding-bottom: 3rem;
   padding-left: 5rem;
   padding-right: 5rem;
@@ -391,13 +400,13 @@ iframe {
 
 .newsTitle {
   background-image: url(../assets/Cleaned/BrushWhite.png);
-  background-size: 20rem;
+  background-size: 22rem;
   background-position: top;
   background-repeat: no-repeat;
   font-size: xx-large;
   color: black;
   font-weight: 900;
-  padding-top: 1rem;
+  padding-top: 1.2rem;
   padding-bottom: 1rem;
   padding-left: 3rem;
   padding-right: 3rem;
